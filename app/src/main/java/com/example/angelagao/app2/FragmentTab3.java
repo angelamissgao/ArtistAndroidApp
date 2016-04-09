@@ -43,19 +43,19 @@ public class FragmentTab3 extends Fragment{
         tv.setText("Frag3");
 
         //Play video
-        Button buttonPlayVideo = (Button)rootView.findViewById(R.id.playvideoplayer);
-        VideoView mVideoView = (VideoView) rootView.findViewById(R.id.videoView);
-
-        String uriPath = "android.resource://" + getActivity().getPackageName() + R.raw.video1;
-        Uri uri = Uri.parse(uriPath);
-        try {
-            mVideoView.setVideoURI(uri);
-            mVideoView.setMediaController(new android.widget.MediaController(getActivity()));
-            mVideoView.requestFocus();
-            mVideoView.start();
-        } catch (Exception e) {
-            Log.e("Tag_App", Log.getStackTraceString(e));
-        }
+//        Button buttonPlayVideo = (Button)rootView.findViewById(R.id.playvideoplayer);
+//        VideoView mVideoView = (VideoView) rootView.findViewById(R.id.videoView);
+//
+//        String uriPath = "android.resource://" + getActivity().getPackageName() + R.raw.video1;
+//        Uri uri = Uri.parse(uriPath);
+//        try {
+//            mVideoView.setVideoURI(uri);
+//            mVideoView.setMediaController(new android.widget.MediaController(getActivity()));
+//            mVideoView.requestFocus();
+//            mVideoView.start();
+//        } catch (Exception e) {
+//            Log.e("Tag_App", Log.getStackTraceString(e));
+//        }
 //        buttonPlayVideo.setOnClickListener(new Button.OnClickListener() {
 //
 //            @Override
