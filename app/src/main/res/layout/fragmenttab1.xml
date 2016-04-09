@@ -3,51 +3,150 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <LinearLayout
-        android:id="@+id/viewA"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.6"
-        android:background="@android:color/holo_purple"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitCenter"
-            android:id="@+id/homePhoto"/>
-        </LinearLayout>
 
     <LinearLayout
         android:id="@+id/viewB"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.4"
         android:background="#f1eeee"
         android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name:"
-            android:id="@+id/ArtistName" />
+            android:padding="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Song Joong-Ki"
-            android:id="@+id/tvFragFirst" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/homePhoto"
+                android:baselineAlignBottom="false" />
 
-        <TextView
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:text="Song Joong Ki"
+                    android:textColor="#666b69"
+                    android:background="#f0f0f0"
+                    android:typeface="monospace"
+                    android:padding="15dp"
+                    android:paddingTop="50dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Profession: Actor, MC"
+                    android:textColor="#666b69"
+                    android:paddingLeft="10dp"
+                    android:background="#f0f0f0"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Birthdate: 1985-Sep-19"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666b69"
+                    android:background="#f0f0f0"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Height: 178cm"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666b69"
+                    android:background="#f0f0f0"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="Star sign: Virgo"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666b69"
+                    android:background="#f0f0f0"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Official WebSite:"
-            android:id="@+id/OfficialWebSite" />
+            android:paddingLeft="20dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="http://asianwiki.com/Song_Joong-Ki"
-            android:id="@+id/WebsiteLink" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Official WebSite:"
+                android:textStyle="bold|italic"
+                android:textColor="#666b69"
+                android:background="#f0f0f0"
+                android:typeface="monospace"
+                android:id="@+id/OfficialWebSite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="http://www.joongki.com/"
+                android:paddingLeft="30dp"
+                android:id="@+id/WebsiteLink" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold|italic"
+                android:textColor="#666b69"
+                android:background="#f0f0f0"
+                android:typeface="monospace"
+                android:id="@+id/EmailAddress" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="kisssjk@sina.cn"
+                android:paddingLeft="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Movies And Likes"
+                android:textStyle="bold|italic"
+                android:textColor="#666b69"
+                android:background="#f0f0f0"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descendants of the Sun (KBS2, 2016)"
+                android:paddingLeft="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Such Thing As Nice Guys (KBS2, 2012)"
+                android:paddingLeft="30dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Werewolf Boy (2012)"
+                android:paddingLeft="30dp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

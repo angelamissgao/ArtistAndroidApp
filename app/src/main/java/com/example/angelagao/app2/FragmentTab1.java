@@ -40,6 +40,7 @@ public class FragmentTab1 extends Fragment {
         TextView tv = (TextView) rootView.findViewById(R.id.tvFragFirst);
 
         ImageView mImage = (ImageView)rootView.findViewById(R.id.homePhoto);
+
         try {
             InputStream ims = getActivity().getApplicationContext().getAssets().open("homepic.jpg");
             Drawable d = Drawable.createFromStream(ims, null);
