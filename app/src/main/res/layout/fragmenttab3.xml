@@ -4,23 +4,100 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="fragment2"
+        android:padding="10dp"
+        android:text="Descendants Of Sun"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="#666b69"
+        android:background="#c6e3ed"
+        android:typeface="monospace"
         android:id="@+id/Frag3Text" />
 
-    <Button
-        android:id = "@+id/playvideoplayer"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Play Video"
-        />
+        android:gravity="center">
 
-    <VideoView
-        android:layout_width="fill_parent"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id = "@+id/playvideoplayer"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Play Video"
+                />
+
+            <Button
+                android:id = "@+id/playvideoplayer_pause"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Pause"
+                />
+        </LinearLayout>
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:id="@+id/videoView1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Second Video"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:textColor="#666b69"
+            android:background="#e1c6fc"
+            android:typeface="monospace"
+            android:id="@+id/Frag4Text" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/videoView" />
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+            <Button
+                android:id = "@+id/playvideoplayer2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Play Video"
+                />
+
+            <Button
+                android:id = "@+id/playvideoplayer_pause2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Pause"
+                />
+        </LinearLayout>
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:id="@+id/videoView2"/>
+
+        </LinearLayout>
 
 
 </LinearLayout>
